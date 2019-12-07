@@ -8,7 +8,7 @@ $conn = mysqli_connect(
 );
 
 if(isset($conn)){
-    echo 'db is conected1' ;
+    echo 'db is conected1 ESTE ES UNA PRUEBA GIT' ;
 }
 
 ?>
