@@ -1,0 +1,232 @@
+* {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0%;
+
+}
+img{
+    
+    height: 160px;
+    width: 180px;
+
+}
+h1#h1nintendo{
+    margin: 5px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-radius: 10px;
+    
+}
+img#zelda{
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+}
+
+img#donkey{
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+}
+img#doom{
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+}
+img#mortal{
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+}
+img#chrono{
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+}
+img#street{
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+}
+img#start{
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+}
+img#trucos{
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: solid;
+}
+header {
+    text-align: center;
+    background-color: #C72525;
+    padding-top: 25px;
+}
+.juegos{
+    text-align: center;
+}
+body{
+    background-color:#C72525;
+}
+.wrapper{
+    background: #C72525;
+    color:#ffffff;
+    border-color: #000000;
+    border: 5px;
+    border-top: 5px;
+    float:left;   
+
+
+}
+
+.main{
+    margin:10px;
+    background: #C72525;
+    color:#ffffff;
+    border-color: #000000;
+    border: 5px;
+    border-top: 5px;
+    display:flex;
+    float:left;
+}
+footer {
+    text-align: center;
+    background-color: #C72525;    
+    padding-top: 25px ;
+    padding-bottom: 25px ;
+    color: white;
+    float: none; 
+    margin:10px;
+    border-radius: 18px;
+}
+
+
+
+article#Zelda{
+
+    background: #ffffff;
+    color: #000000;
+    margin:10px;
+}
+article{
+
+    background: #ffffff;
+    color: #000000;
+    margin:10px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+
+}
+
+#Zelda{
+    background: #999999;
+    
+}
+section{
+    text-align: center;
+    
+}
+.titulo {
+    
+    color: white;
+}
+
+ul{
+    
+    list-style: none;
+    display: flex;
+    justify-content: center ; 
+    flex-wrap: wrap;
+    margin-top: 1%;
+
+    
+}
+ul#ulNintendo{
+    text-align: center;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4em;
+}
+li#liNintendo:hover{
+    text-align: center;
+    transition: all 1s linear;
+    background-color: yellow;
+}
+
+
+li {
+    color: white;
+    padding: 10px 10% 10px 10%; 
+    text-align: center;
+}
+
+li:hover{
+    background-color:yellow;
+    transition: all 1s linear;
+}
+
+.container {
+    margin: 10%;
+    text-align: left;
+}
+
+
+h2#h2Aside{
+    color: yellow;
+
+}
+aside{
+    float:right;
+    text-align: center;
+    background-image: url(https://cdn.shopify.com/s/files/1/1045/2900/products/Nintendo-Logo_grande.png?v=1448420039);
+    background-color:transparent;
+    background-attachment: fixed;
+    margin:5px;
+    border-radius: 18px;
+
+}
+h3#h3trucos{
+    color:yellow;
+}
+#prueba article{
+    background-color: aqua;
+    
+
+}
+
+nav#Categorias{
+float: right;
+}
+
+ p{
+     text-justify: auto;
+     text-align: center;
+
+
+ }
+
+ article#footernuevo{
+    background-color: brown;
+    color:white;
+    margin:10px;
+
+    }
+    div#footer1{
+        background-color:brown;
+        margin: 10px;
+
+    }
