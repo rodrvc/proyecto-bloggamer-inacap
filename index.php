@@ -108,7 +108,7 @@
                             <img src="img/videojuegos.jpg" class="imagen" alt="videojuegos">
                         </div>
                         <div>
-                            <p class="aside-text">Lorem ipsum dolor sit, </p>
+                            <p class="aside-text">Lorem ipsum dolor sit11111111111 </p>
                         </div>
                     </div>
                 </div>
@@ -155,7 +155,7 @@
 
 
     <footer>
-        <p> &copy;Alejantroll Rvc Systems</p>
+        <p> &copy;Alejantroll Rvc Systems1111</p>
     </footer>
 </body>
 
