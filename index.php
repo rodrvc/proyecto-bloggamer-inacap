@@ -7,8 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Paginas de video juegos</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+  
     <link rel="icon" type="image/png" sizes="192x192" href="img/fav/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
    
@@ -33,7 +35,7 @@
         </ul>
     </header>
     <section class="main-container">
-        <div class="section">
+        <div class="section col-8" >
             <div class="container container-icon">
                 <h1 class="main-pag-title ">Noticias del mundo Gamer</h1>
                 <p class="principal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam exercitationem
@@ -51,31 +53,25 @@
                 <img class="icons i3 joystick" src="img/game-controller.png" alt="">
                 <img class="icons i2 joystick" src="img/gamepad.png" alt="">
             </div>
-            <div class="container">
-                <h2>Esto es una post </h2>
-                <p class="article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellat sequi, nisi
-                    ipsum
-                    perferendis iusto?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nobis aperiam pariatur dolore
-                    voluptatibus iusto consequatur quam tempora labore expedita officia placeat ut, assumenda, est
-                    incidunt quo consequuntur, architecto ipsam!
 
-                </p>
-            </div>
+            <div class="container"> 
+            <?php
+                $query = "SELECT * FROM post_gamer";
+                $result_post = mysqli_query($conn, $query);
+                
+                while($row = mysqli_fetch_array($result_post)){ ?>
+                  <!-- Se agrega Post --> 
+                        <div class="container">
+                         <h2 ><?php echo $row['titulo'] ?></h2>
+                         <p class="article"><?php echo $row['descripcion'] ?></p>   
+                        </div>
+                         <hr align="center">
 
-            <hr align="center">
-            <div class="container">
-                <h2>Esto es una post </h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat repellat sequi, nisi ipsum
-                    perferendis iusto?
-                    Delectus, fugiat maxime. Cum quae adipisci non quia dignissimos excepturi, sed ratione natus
-                    repudiandae earum.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum animi quo enim libero non
-                    perspiciatis unde dolor quia. Maxime obcaecati soluta rem ex a alias quis id ab quisquam temporibus!
-                </p>
-            </div>
-        </div>
-
+                <?php }?>
+                <div>
+              
+        
+        <!-- Aside para depues 
         <div class="aside">
             <h4>Articulos Recomendados</h4>
             <div class="container-aside">
@@ -108,10 +104,11 @@
                             <img src="img/videojuegos.jpg" class="imagen" alt="videojuegos">
                         </div>
                         <div>
-                            <p class="aside-text">Lorem ipsum dolor sit11111111111 </p>
+                            <p class="aside-text">Lorem ipsum dolor sit, </p>
                         </div>
                     </div>
-                </div>
+                </div> 
+                -->
 
 
             </div>
@@ -139,14 +136,6 @@
 </form>
 </div>
 
-<?php
-    $query = "SELECT * FROM post_gamer";
-   $result_post = mysqli_query($conn, $query);
-
-   while($row = mysqli_fetch_array($result_post)){ ?>
-   <p><?php echo $row['id_post'] ?></p>
-
-<?php }?>
 
 
 
@@ -155,7 +144,7 @@
 
 
     <footer>
-        <p> &copy;Alejantroll Rvc Systems1111</p>
+        <p> &copy;Alejantroll Rvc Systems</p>
     </footer>
 </body>
 
