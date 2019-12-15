@@ -126,7 +126,7 @@
   
   <div class="form-group">
     <label for="post">Post titulo</label>
-    <input type="text" name="post" class="form-control" id="post">
+    <input type="text" name="titulo_post" class="form-control" id="post">
     <small id="emailHelp" class="form-text text-muted">Ingresa el encabezado de tu post</small>
   </div>
 
