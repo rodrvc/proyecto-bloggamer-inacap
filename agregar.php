@@ -8,12 +8,9 @@
 
         echo $titulo_de_post;
         echo $description;
-
+        
         $query = "INSERT INTO post_gamer(id_post , descripcion) VALUES ('$titulo_de_post', '$description')";
-        $result = mysqli_query($conn, $query);
-      
+        $result = mysqli_query($conn, $query); 
             echo 'saved';
-        
-        
     }
 ?>

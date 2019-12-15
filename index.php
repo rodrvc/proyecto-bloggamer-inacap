@@ -63,11 +63,16 @@
                   <!-- Se agrega Post --> 
                         <div class="container">
                          <h2 ><?php echo $row['titulo'] ?></h2>
-                         <p class="article"><?php echo $row['descripcion'] ?></p>   
+                         <p class="article"><?php echo $row['descripcion'] ?></p>
+                         <div>   
+                            <a href="eliminar.php?id=<?php echo $row['id_post']?>" class="btn btn-danger btn-lg active" role="button" aria-pressed="true">Eliminar</a>
+                        </div>
                         </div>
                          <hr align="center">
+                        
 
                 <?php }?>
+               
                 <div>
               
         
@@ -126,7 +131,7 @@
   </div>
 
   <div class="form-group">
-    <label for="exampleFormControlTextarea1">Contenido </label>
+    <label for="exampleFormControlTextarea1">Contenido</label>
     <textarea class="form-control" id="textArea-description" rows="3" name="textArea-description"></textarea>
   </div>
   <div class="form-group form-check">
