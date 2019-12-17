@@ -27,7 +27,7 @@
     ?>
     <header>
         <img src="img/logo.png" width="100" height="100">
-        <h1 class="titulo">GAMER NEW CHECK </h1>
+        <h1 class="titulo">GAMER NEW CHECK11111 </h1>
         <ul>
             <li class="linav"><a href="index.html">Inicio</a></li>
             <li class="linav"><a href="trucos.html">Trucos</a></li>
