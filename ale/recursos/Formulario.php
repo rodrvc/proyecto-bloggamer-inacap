@@ -31,7 +31,7 @@ td{
 
 <body>
 <h2>Subir Post</h2>
-<form action="insertar_contenido.php" method="post" enctype="multipart/form-data" name="form1">
+<form action="ale/recursos/insertar_contenido.php" method="post" enctype="multipart/form-data" name="form1">
 <table >
 <tr>
   <td>Título: 

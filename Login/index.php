@@ -18,11 +18,8 @@ include("registrarusuario.php")
         <img src="img/logo.png" width="100" height="100">
         <h1 class="titulo">GAMER NEW CHECK </h1>
         <ul>
-            <p><a href="index.php"> Registrar</a></p>
-            <p><a href="login.php"> Login</a></p>
+            <p><a href="index.php"> Registrar</a></p>      
             <p><a href="mostrar.php"> Mostrar</a></p>
-            
-      
         </ul>
 </header>
 

@@ -18,10 +18,11 @@
             <input type="password" name="contraseña" class="form-control" id="message-text" >
           </div>
           <button type="submit" name="envios_inginfrom" class="btn btn-primary">Iniciar</button>
+          <button type="button"  class="btn btn-secondary" data-dismiss="modal">Close</button>
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button"  class="btn btn-secondary" data-dismiss="modal">Close</button>
+       
         
       </div>
     </div>

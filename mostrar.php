@@ -1,32 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Paginas de video juegos</title>
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
-    <link href="css/styleprueba.css" rel="stylesheet" type="text/css" /></head>
-
-</head>
-
-<body>
-    <header id=headernintendo>
-            <img src="img/logo.png" width="100" height="100">
-        <h1 class="titulo">GAMER NEWS</h1>
-        <ul>
-            <li><a href="index.php">Inicio</a></li>
-            <li><a href="trucos.html">Trucos</a></li>
-            <li><a href="Nintendo.php">Nintendo</a></li>
-            <li><a href="formulario.php">Agregar Contenido</a></li>
-        </ul>
-    </header>
+<?php include("header.php")?>
     <section class="wrapper">
-        <h1 id=h1nintendo>Juegos que marcaron la industria Nintendo</h1>
+        
 
-        <section class="main">
-
+        <section class="main container">
+        <h1 class="main-pag-title">Juegos que marcaron la industria Nintendo</h1>
             <section class="juegos">
                
                 <article id="Zelda">
@@ -47,44 +24,48 @@ exit();
 
 }
 
-$consulta= "SELECT * FROM post ORDER BY fecha DESC";
 
+
+
+$consulta= "SELECT * FROM post ORDER BY fecha DESC";
+?>
+<div class="row" >
+    
+    <?php 
 if($resultado=mysqli_query($conexion, $consulta)){
 
-while($registro=mysqli_fetch_assoc($resultado)){
+while($registro=mysqli_fetch_assoc($resultado)){?>
 
-echo "<h2>" . $registro['Titulo'] . "</h2>";
+<div class="col-sm-6">
+    <div class="card" style="width: 18rem;">
+    <?php if($registro['Imagen']!="") echo "<img src='img/" .$registro['Imagen'] . "' width='300px'  class='card-img-top' />" ?> 
+  
+        <div class="card-body">
+            <h2 class="card-title">
+            <h5> <?php echo  $registro['Titulo']  ?></h5> 
+   
+            <?php echo "<h6 class='card-text' >" . $registro['Fecha'] . "</h6>"; ?>
+            <p class="card-text"><?php echo $registro['Comentario'] ?></p>
+    
+        </div>
+    </div>
+</div>
 
-if($registro['Imagen']!=""){
+<?php            
 
-    echo "<img src='img/" .$registro['Imagen'] . "' width='300px'  />";
-    
-    
-    
+
+
     }
-
-echo "<h6>" . $registro['Fecha'] . "</h6>";
-
-echo "<h3> Descripción: </h3> ";
-
-echo "<p>" . $registro['Comentario'] . "</p><br/><br/>";
-
-
-
-echo "<hr/>";
-
-}
-
-
 }
 
 ?>
+</div>
                  
                  
                  </article>
                
             </section>
-<div class="aside"> 
+<div class="container"> 
             <aside>
                 <h2 id="h2Aside"> Navega a travez de la pagina aqui.</h2>
                 <ul id=ulNintendo>
@@ -107,7 +88,7 @@ echo "<hr/>";
 
     </section>
 
-
+    <?php include("footer.php")?>
 </body>
 
 </html>

@@ -1,27 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Paginas de video juegos</title>
-        <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-    
-    
-        <link rel="icon" type="image/png" sizes="192x192" href="img/fav/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
-</head>
-<body>
-    <header>
-            <img src="img/logo.png" width="100" height="100">
-            <h1 class="titulo">GAMER NEWS</h1>
-        <ul class="links">
-            <li class="linav"><a href="index.html">Inicio</a></li>
-            <li class="linav"><a href="trucos.html">Trucos</a></li>
-            <li class="linav"><a href="nintendo.html">Nintendo</a></li>
-        </ul>
-        </header>
+<?php include("header.php") ?>
+
         <section class="section-trucos">
 
             <div class="containerTrucos">

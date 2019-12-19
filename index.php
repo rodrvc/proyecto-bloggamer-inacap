@@ -99,10 +99,7 @@
     <label for="exampleFormControlTextarea1">Contenido</label>
     <textarea class="form-control" id="textArea-description" rows="3" name="textArea-description"></textarea>
   </div>
-  <div class="form-group form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
+ 
   <button type="submit" class="btn btn-primary" name="guardarPost">Submit</button>
 </form>
 </div>
