@@ -1,71 +1,525 @@
-*{
-    padding: 0;
-    margin: 0;
-    font-family: century gothic;
+/* red : #C72525 , darkRed: B42222 */ 
+
+
+* {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0%;
+
+}
+
+header {
+    background-color: #C72525;
+}
+
+.log {
+    text-align: right;
+}
+
+.header {
+    text-align: center;
+ 
+    padding-top: 25px;
+}
+.titulo {   
+    color: white;
+    margin-bottom: 40px;
+}
+
+
+
+
+ul{ 
+    list-style: none;
+    display: flex;
+    justify-content: space-around ; 
+    flex-wrap: wrap;
+    margin-top: 1%;
+    padding: 0;   
+}
+
+
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4em;
+}
+
+
+
+.linav {
+    color: white;
+    padding: 10px 10% 10px 10%; 
+    
+    text-align: center;
+    flex:1; 
+}
+
+.linav:hover{
+    background-color:rgb(223, 201, 2);
+    transition: all 0.5s linear;
+}
+
+body > header > ul > li:hover {
+    background-color:rgb(223, 201, 2);
+}
+
+
+
+hr {
+    margin-left: 30%;
+    margin-right: 30%;
+    justify-self: center;
+}
+
+.container-img {
+    display: flex;
+    
+}
+
+.icons {
+    margin: 5%;
+    justify-content: space-between;
+    width: 140px;
+}
+
+.container {
+    margin: 14%;
+    text-align: left;
+}
+
+footer {
+    text-align: center;
+    background-color: #C72525;
+    padding-top: 25px ;
+    padding-bottom: 25px ;
+    color: white;
+   
+    bottom: 10;
+    border:solid 1px  gray ; 
+    border-radius: 2px;
+  
+    height:30px;
+
+}
+
+.aside {
+    min-width: 200px;
+    width: 25% ;
+    
+    padding: 2px;
+    
+    border-radius: 2px;
+    display: block;
+    text-align: center;
+    height: auto;
+    align-items: center;
+    justify-items: center;
+}
+
+.aside > p {
+    font-size: 0.3em;
+}
+
+body > section > div.aside > div >  div > div> div > p {
+    font-size: 0.79em;
+}
+
+
+
+.main-container{
+    display: flex;
+    margin: 0px;
+}
+
+
+
+ .imagen {
+    width: 140px;
+    
+    border-radius: 10px;
+}
+
+.card {
+  
+    padding-bottom: 30px;
+}
+
+h4 {
+    margin-top: 20px ;
+    margin-bottom: 30px; 
+}
+
+h5 {
+    
+    margin-bottom: 20px ;
+}
+
+.body-card {
+    margin: 0 auto ;
+    width: 148px;
+}
+
+.container-aside {
+    max-width: 40% ;
+    min-width: 20%;
+    padding: 2px;
+    text-align: center; 
+    margin : 3%;
+}
+
+.imgTru{
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 500px;
+    
+}
+
+.imgTru{
+    margin-top: 2%;
+    display: block; 
+   
+}
+
+/*CSS de imagenes*/
+.imgTru{
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 30%;
+    
+}
+
+
+
+
+
+
+
+/*********************MEDIA QUERY 700*********************************/
+
+
+@media (max-width: 700px) {
+
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+   
+    }
+    .aside {
+        max-width: 100% ;
+        min-width: 100%;
+    }
+
+    .container-aside {
+        max-width: 100% ;
+        min-width: 100%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start; 
+    }
+
+    h4 {
+        margin-top: 70px;
+        padding: 10px 1%; 
+    }
+
+    .card {
+        margin: 10px;
+    }
+
+    .main-container {
+        margin: 5%; 
+    }
+    .container {
+        margin: 10% 0% 10% 0 ; 
+        margin-bottom: 20px;
+    }
+
+    .imgTru{
+        margin-top: 2%;
+        display: block; 
+       
+    }
+    
+    /*CSS de imagenes*/
+    .imgTru{
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        width: 30%;
+        
+    }
+
+    
+   
+    
+}
+
+
+
+/*********************MEDIA QUERY 500*********************************/
+
+
+@media (max-width: 530px) {
+    
+    ul {
+      flex-direction: column;
+    }
+
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+    .aside {
+        max-width: 100% ;
+        min-width: 100%;
+    }
+
+    .container-aside {
+        max-width: 100% ;
+        min-width: 100%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start; 
+    }
+
+    h4 {
+        margin-top: 20px;
+        padding: 10px 10%; 
+    }
+    .imgTru{
+        margin-top: 2%;
+        display: block; 
+       
+    }
+    
+    /*CSS de imagenes*/
+    .imgTru{
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        width: 30%;
+        
+    }
+  }
+
+
+  @media (max-width: 480px) {
+    div > .container-aside {
+      
+       align-items: flex-start; 
+    }
+    .card {
+        text-align: left;
+        width:100%;
+        margin-left: 10%;
+        margin-top: 20px;
+        border-bottom: solid 1px gainsboro ;
+        
+        
+    }
+   
+
+    .joystick {
+        max-width: 60px;
+    }
+
+    .body-card {
+        padding: 0%;
+        margin: 0px;
+    }
+
+    .container-aside {
+        padding: 0 ; 
+    }
+
+    .imagen {
+        max-width: 500%;
+        height: auto;
+        width: 250px;
+    }
+    .imgTru{
+        margin-top: 2%;
+        display: block; 
+       
+    }
+    
+    /*CSS de imagenes*/
+    .imgTru{
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+        width: 30%;
+        
+    }
+   
+  }
+
+
+
+
+
+  /****************************************Trucos**************************************************/
+
+/*Trucos*/
+
+
+.title-truco {
+    margin-top: 100px;
     text-align: center;
 }
 
-form {
-padding: 50px 20px;
-background-color: #ededed;
-margin: calc(25% + 100px);
-margin-top: 70px;
-padding-top: 28px;
+
+
+section{
+ 
+    display: inline-block;
+
 }
 
-h1 {
-    text-aling: center;
-    padding: 12px;
-    color: #444;
+.section-trucos {
+    margin: 40px 10% 5% ; 
 }
 
-input {
-    width: calc(100% - 20px);
-    padding: 9px;
-    margin: auto;
-    margin-top: 12px;
-    font-size: 16px;
+/*aside
+aside{
+    width: 20%;
+    display: inline-block;
+    float: right;
+}*/
+
+/*Menu <ul>*/
+.indice{
+    list-style: none;
+    display: inline;
+    justify-content: center;
+    text-align: left ;
+    margin: 90%;
+    
+
 }
 
-input[type='submit']{
-    background-color: #48e;
-    color: #fff;
-    width: calc(80% - 20px);
-    margin: 0 10%;
-    margin-top: 22px;
-    border: none;
+/*Menu <li>*/
+h2 {
+    margin-bottom: 1em;
 }
 
-.ok {
-    text-align: center;
-    width: 100%;
-    padding: 12px;
-    background-color: #4e8;
-    color: #fff;
+.li2{
+    text-align: justify;
+    margin-left: -8%;
+    margin-bottom: 20px;
+    
 }
 
-.bad {
-    text-align: center;
-    width: 100%;
-    padding: 12px;
-    background-color: #a22;
-    color: #fff;  
+
+/*CSS de div de Section*/
+.containerTrucos {
+    margin: 2%;
+    text-align: left;
 }
 
-input[type='submit']{
-    background-color: #48e;
-    color: #fff;
-    width: calc(80% - 20px);
-    margin: 0 10%;
-    margin-top: 22px;
-    border: none;
+/*CSS de imagenes*/
+.imgTru{
+    margin:100px auto 100px auto;
+    border-radius: 10px;
+    display: block; 
 }
 
-.button {
-background-color: #48e;
-color: #fff;
-width: calc(80% - 20px);
-margin: 0 10%;
-margin-top: 22px;
-border: none; 
+/*CSS de imagenes*/
+.imgTru{
+    margin: 0 , 200, 10,0;
+  
+    height: auto;
+    width: 500px; 
 }
+
+/*CCS del parafo*/
+.par{
+    margin-top: 1%;
+    text-align: justify;
+}
+
+.containerTrucos {
+    margin: 80px auto 150px;
+}
+
+body > section > ul > li  > a { 
+    font-size: .9em;
+    color: gray;
+    margin-left: 10%;
+}
+
+
+body > section > ul > li  > a:hover {   
+    color: rgb(168, 0, 0);
+}
+
+
+
+
+
+/*
+div.container{
+width: 96%;
+max-width: 755px;
+margin: 0 auto;
+}
+*/
+
+/****************************************FIN Trucos**************************************************/
+/********************iconos  bailarines******************/
+    .i1 {
+        /* ... */
+        animation:dancing 1.5s ease 2s infinite;
+      }
+      .i2 {
+        /* ... */
+        animation:dancing 1s ease 2s infinite;
+      }
+      .i3 {
+        /* ... */
+        animation:dancing 1.3s ease 2s infinite;
+      }
+
+      .principal{
+          margin-bottom: 100px;
+          text-align: justify;
+      }
+     .main-pag-title {
+         font-size: 4em;
+         padding-bottom: 10%;
+         margin-bottom: 80px;
+    }
+
+    
+
+
+    @keyframes dancing {
+        25% {
+          transform:translateY(10px) skew(-2deg);
+        }
+        0%, 50%, 100% {
+          transform:translateY(0) skew(0);
+        }
+        75% {
+          transform:translateY(20px) skew(2deg);
+        }
+      }
+
+/********************main icons title******************/
+
+
+
+
+    
+
+ 
+
+
+

@@ -42,8 +42,8 @@
 
             <?php }  else { ?>
               <button type="button" class="btn btn-danger" data-toggle="modal" 
-              data-target="#exampleModal" data-whatever="@fat">Singin</button>
-              <a class="btn" id="log" href="loginprincipal.php">Sing up</a>
+              data-target="#mod_singin" data-whatever="@fat">Singin</button>
+              <button data-target="#mod_singup" data-toggle="modal" data-whatever="@fat"  class="btn" id="log" >Sing up</a>
             <?php }?>
         </div>
         <div class="header"> 

@@ -8,11 +8,18 @@
 }
 
 header {
-    text-align: center;
     background-color: #C72525;
-    padding-top: 25px;
 }
 
+.log {
+    text-align: right;
+}
+
+.header {
+    text-align: center;
+ 
+    padding-top: 25px;
+}
 .titulo {   
     color: white;
     margin-bottom: 40px;
