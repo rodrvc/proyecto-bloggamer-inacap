@@ -1,0 +1,68 @@
+* {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 0%;
+
+}
+
+header {
+    text-align: center;
+    background-color: #C72525;
+    padding-top: 25px;
+}
+
+.titulo {
+    
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4em;
+}
+
+
+ul{
+    
+    list-style: none;
+    display: flex;
+    justify-content: center ; 
+    flex-wrap: wrap;
+    margin-top: 1%;
+
+    
+}
+
+li {
+    color: white;
+    padding: 10px 10% 10px 10%; 
+    
+    text-align: center;
+    
+    
+    
+}
+
+li:hover{
+    background-color: orange;
+    transition: all 1s linear;
+}
+
+
+
+/*Fin trucos*/
+footer {
+    text-align: center;
+    background-color: #C72525;
+    padding-top: 25px ;
+    padding-bottom: 25px ;
+    color: white;
+
+}
+
+
+
+
+
+
+

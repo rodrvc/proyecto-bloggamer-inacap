@@ -19,6 +19,11 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="js/scrypt.js" ></script>
 
+
+    <!-- PHP INICIO DE SESSION!!  -->
+    <?php session_start();
+      //error_reporting(0);
+    ?>
 </head>
 
 <body>
@@ -27,53 +32,41 @@
     include("db.php");
     ?>
     <header >
-        <div class="log"><a class="btn" id="log" href="singin.php">Sing in</a>
-        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Singin</button>
-    </div>
+         <div class="log">
+            <?php 
+            $sessionActiva = $_SESSION['NOMBRE_USUARIO'];
+
+            if($sessionActiva != null ){
+              ?><span class="badge badge-danger">Session: <?php echo $_SESSION['NOMBRE_USUARIO']?>  </span>
+              <a class="btn" id="log" href="cerrarSesion.php">Cerrar Sesion</a>
+
+            <?php }  else { ?>
+              <button type="button" class="btn btn-danger" data-toggle="modal" 
+              data-target="#exampleModal" data-whatever="@fat">Singin</button>
+              <a class="btn" id="log" href="loginprincipal.php">Sing up</a>
+            <?php }?>
+        </div>
         <div class="header"> 
         <img src="img/logo.png" width="100" height="100">
         <h1 class="titulo">GAMER NEW CHECK </h1>
         <ul>
-            
+       
             <li class="linav"><a href="index.php">Inicio</a></li>
             <li class="linav"><a href="trucos.html">Trucos</a></li>
             <li class="linav"><a href="Nintendo.html">Nintendo</a></li>
-   
+           
+ 
         </ul>
         </div>
+        <?php include("singin.php") ?>
+    
+    
+
+
+    
     </header>
 
 
-
-
-
-
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">New message</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body" >
-        <form action="agregar.php" method="POST">
-          <div class="form-group" >
-            <label for="recipient-name" class="col-form-label">Recipient:</label>
-            <input type="text" class="form-control" id="recipient-name">
-          </div>
-          <div class="form-group">
-            <label for="message-text" class="col-form-label">Message:</label>
-            <textarea class="form-control" id="message-text"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Send message</button>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button"  class="btn btn-secondary" data-dismiss="modal">Close</button>
-        
-      </div>
-    </div>
-  </div>
+   
+  
 </div>

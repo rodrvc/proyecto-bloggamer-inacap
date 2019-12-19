@@ -27,5 +27,7 @@
         $query = "INSERT INTO post_gamer(id_post, titulo , descripcion) VALUES ('$id_post', '$titulo_de_post', '$description')";
         $result = mysqli_query($conn, $query); 
             echo 'saved';
+
+            header("Location: index.php");
     }
 ?>
