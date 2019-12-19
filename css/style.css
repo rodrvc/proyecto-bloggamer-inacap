@@ -8,9 +8,23 @@
 }
 
 header {
-    text-align: center;
     background-color: #C72525;
+}
+
+.log {
+    text-align: right;
+}
+
+.header {
+    text-align: center;
+ 
     padding-top: 25px;
+}
+
+a:link {
+    color:fff;
+    text-decoration: none; 
+    background-color: none;
 }
 
 .titulo {   
@@ -271,6 +285,22 @@ h5 {
     .aside {
         max-width: 100% ;
         min-width: 100%;
+    }
+
+    .log {
+        text-align: right;
+        align-self: auto;
+
+    }
+
+    body > header > div {
+
+    }
+
+    body > header > div > #log {
+        text-align: right;
+        
+
     }
 
     .container-aside {

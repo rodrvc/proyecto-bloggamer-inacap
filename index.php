@@ -35,9 +35,7 @@
                             <a href="eliminar.php?id=<?php echo $row['id_post']?>" class="btn btn-danger btn  active" role="button" aria-pressed="true">Eliminar</a>
                         </div>
                         </div>
-                         <hr align="center">
-                        
-
+                         <hr align="center">    
                 <?php }?>
                
                 <div>

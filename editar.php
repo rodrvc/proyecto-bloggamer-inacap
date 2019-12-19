@@ -32,6 +32,9 @@
 <?php 
     include("header.php");
 ?>
+
+
+
     <div class="container">
     <form action="editar.php?id=<?php echo $_GET['id']; ?>" method="POST">
   
@@ -54,9 +57,9 @@
 
        <div>
 
-<?php 
-    include("footer.php");
-?>
+        <?php 
+            include("footer.php");
+        ?>
 
 
 
